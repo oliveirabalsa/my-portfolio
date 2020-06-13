@@ -7,7 +7,9 @@
         flex-direction: column;
         overflow: hidden;
     }
-
+    #technologies {
+        height: initial;
+    }
 
     #wpp {
         left: 60px;
@@ -117,6 +119,9 @@
         margin-left: 36%;
     }
 
+    #technologies {
+        height: initial;
+    }
 
     #sub-contact{
         display: inline-block;
