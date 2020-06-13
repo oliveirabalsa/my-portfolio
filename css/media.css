@@ -285,6 +285,9 @@
         font-size: 75px;
         margin-bottom: 10px;
     }
+     #technologies {
+        height: initial;
+    }
 
     .box-progress {
         width: 265px;
