@@ -1,0 +1,312 @@
+/* -----------------------Large Devices------------------------*/
+
+@media screen and (max-width: 1200px) {
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+
+    #wpp {
+        left: 60px;
+        bottom: 140px;
+    }
+
+    #menu {
+        font-size: 30px;
+    }
+
+    #profile img {
+        width: 400px;
+    }
+
+    #profile h1 {
+        font-size: 60px;
+    }
+
+    #profile p {
+        font-size: 30px;
+    }
+
+    #about {
+        font-size: 22px;
+    }
+
+    #data {
+        width: 380px;
+        padding-left: 115px;
+    }
+
+    #technologies h1::after {
+        margin-left: 39%;
+    }
+
+    .tecs {
+        display: grid;
+    }
+
+
+    .tecs div {
+        margin-bottom: 15px;
+    }
+
+    .group div {
+        width: 180px;
+    }
+
+    #contact h1::after {
+        margin-left: 43%;
+    }
+}
+
+/* -----------------------Medium Devices------------------------*/
+@media screen and (max-width: 768px) {
+    
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #wpp {
+        bottom: 230px;
+        left: 30px;
+    }
+
+    #menu {
+        font-size: 25px;
+    }
+
+    #menu-itens {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-top: 18px;
+    }
+
+    #profile { 
+        letter-spacing: 5px;
+    }
+
+    #profile img {
+        width: 335px;
+    }
+
+    #profile h1 {
+        font-size: 50px;
+    }
+
+    #about {
+        display: block;
+    }
+
+    #data {
+        margin: 0 auto;
+        padding-right: 145px;
+    }
+
+    #descricao {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    #technologies h1::after {
+        margin-left: 36%;
+    }
+
+
+    #sub-contact{
+        display: inline-block;
+    }
+
+    #contact h1::after {
+        margin-left: 41%;
+    }
+
+    .group {
+        padding: 15px
+    }
+
+    #form input {
+        width: 340px;
+        margin: 15px;
+    }
+
+    #btn {
+        margin-bottom: 15px;
+        
+    }
+
+    textarea {
+        width: 600px;
+    }
+}
+
+/* -----------------------Small devices------------------------*/
+@media screen and (max-width: 576px) {
+
+    header {
+        min-height: 100vh;
+    }
+
+    #wpp {
+        bottom: 45px;
+        left: 11px;
+        font-size: 40px;
+    }
+
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #profile {
+        margin-top: 75px;
+    }
+
+    #profile img {
+        width: 215px;
+        margin-top: 100px;
+    }
+
+    #profile h1 {
+        font-size: 30px;
+    }
+
+    #profile h1::after {
+        width: 160px;
+    }
+
+    #profile p {
+        font-size: 16px;
+    }
+
+    #about {
+        min-height: 107vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #about h2 {
+        font-size: 27px;
+        max-width: 85%;
+        margin: 20px auto;
+    }
+
+    #about p {
+        font-size: 15px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #social__media {
+        margin: 50px;
+    }
+
+    #data {
+        font-size: 16px;
+        margin: 20px auto;
+        max-width: 50%;
+    }
+
+    #form {
+        display: block;
+    }
+
+    textarea {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #wpp {
+        bottom: 10px;
+        left: 11px;
+        font-size: 40px;
+        }
+
+    #menu {
+        font-size: 16px;
+    }
+
+    #profile img {
+        width: 300px;
+        margin: 0;
+    }
+
+    #about h2 {
+        font-size: 22px;
+        max-width: 85%;
+        margin: 20px auto;
+    }
+
+    #about p {
+        font-size: 13px;
+        max-width: 60%;
+        margin-left: 35px;
+    }
+
+    #social__media {
+        margin: 30px 10px;
+    }
+
+    #data {
+        font-size: 13px;
+        margin: 20px -20px;
+        max-width: 50%;
+    }
+
+    #technologies h1 {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .tecs i {
+        font-size: 75px;
+        margin-bottom: 10px;
+    }
+
+    .box-progress {
+        width: 265px;
+        height: 6px;
+        border-radius: 13px;
+        background-color: #bbb;
+        margin: 1px auto;
+        padding: 2px;
+    }
+
+    #contact h1 {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    #sub-contact i {
+        padding: 18px;
+    }
+
+    .group p {
+        font-size: 13px;
+    }
+
+    #form input {
+        width: 250px;
+    }
+
+    textarea {
+        width: 275px;
+    }
+}
+

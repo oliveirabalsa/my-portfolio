@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 1px;
+  color: #bebebe;
+  text-align: center;
+}
+
+header {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23222222' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23444444' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23666666' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23888888' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23aaaaaa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23cccccc' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  vertical-align: middle;
+}
+
+/* ids e classes */
+#wpp {
+  color: #06d755;
+  font-size: 60px;
+  position: fixed;
+  left: 35px;
+  bottom: 30px;
+}
+
+/* ----------------------- Menu ------------------------*/
+#menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+#menu a {
+  text-decoration: none;
+  color: #bebebe;
+  padding-left: 50px;
+  transition: all 0.5s;
+}
+
+#menu a:hover {
+  color: #f0ffff;
+}
+
+/* ----------------------- profile ------------------------*/
+#profile {
+  margin-top: 100px;
+  letter-spacing: 10px;
+}
+
+#profile h1 {
+  font-size: 45px;
+}
+
+#profile p {
+  font-size: 20px;
+}
+
+#profile img {
+  width: 400px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+#profile h1::after {
+  content: "";
+  width: 250px;
+  height: 2px;
+  background-color: currentColor;
+  display: block;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+/* -----------------------about------------------------*/
+
+#about {
+  background-color: rgb(218, 218, 218);
+  min-height: 500px;
+  width: 100%;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-top: 50px;
+  align-items: center;
+  height: 100vh;
+}
+
+#about h2 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+#about h2 span {
+  color: black;
+}
+
+#about p {
+  width: 425px;
+  text-align: start;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+#about p span {
+  color: #000;
+  font-weight: 700;
+}
+
+/* -----------------------social__media------------------------*/
+#social__media {
+  margin: 50px auto;
+  text-align: start;
+}
+
+#social__media a {
+  font-size: 16px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  color: #232323;
+  border: 1px solid #888;
+  border-radius: 50%;
+  padding: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  transition: all 0.5s;
+  background-color: transparent;
+}
+
+#social__media a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* -----------------------data------------------------*/
+#data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+  font-size: 16px;
+  line-height: 45px;
+  letter-spacing: 1px;
+  margin-left: -170px;
+}
+.download__curriculum {
+  color: black;
+}
+
+/* -----------------------technologies------------------------*/
+#technologies {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23222222' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23444444' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23666666' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23888888' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23aaaaaa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23cccccc' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 700px;
+  font-size: 16px;
+  height: 100vh;
+  color: #333333;
+}
+
+#technologies h1 {
+  padding-top: 20px;
+  font-size: 40px;
+  color: white;
+}
+
+#technologies h1::after {
+  content: "";
+  background-color: currentColor;
+  width: 40px;
+  height: 1px;
+  display: block;
+  margin: 3px 44%;
+}
+
+.tecs {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.tecs i {
+  font-size: 90px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+  margin: 10px auto;
+}
+
+.box-progress {
+  width: 350px;
+  height: 6px;
+  border-radius: 13px;
+  background-color: #bbb;
+  margin: 1px auto;
+  padding: 2px;
+}
+
+.html__and__css {
+  width: 90%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: html__and__css 4s;
+}
+
+.js {
+  width: 85%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: js 4s;
+}
+.vue {
+  width: 75%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: vue 4s;
+}
+.react {
+  width: 50%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: react 4s;
+}
+.typescript__progress {
+  width: 40%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: typescript__progress 4s;
+}
+.node {
+  width: 70%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: node 4s;
+}
+.python {
+  width: 30%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: python 4s;
+}
+.angular {
+  width: 40%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+  animation: angular 4s;
+}
+
+.typescript {
+  width: 80px;
+  height: 80px;
+}
+
+.red {
+  color: #cc362a;
+}
+
+.blue {
+  color: #34a3d5;
+}
+
+.yellow {
+  color: #f8db00;
+}
+
+.gray {
+  color: #333333;
+}
+
+.coral {
+  color: #e94e32;
+}
+.green {
+  color: #29612e;
+}
+
+.purple {
+  color: #6b45a8;
+}
+
+/* -----------------------KeyFrames------------------------*/
+
+@keyframes html__and__css {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes js {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes vue {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+@keyframes react {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes typescript__progress {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes node {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes python {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes angular {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+/* -----------------------contact------------------------*/
+#contact {
+  background-color: #fff;
+  width: 100%;
+  min-height: 700px;
+  font-size: 16px;
+  color: #333333;
+}
+
+#contact h1 {
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+#contact h1::after {
+  content: "";
+  background-color: currentColor;
+  width: 40px;
+  height: 1px;
+  display: block;
+  margin: 3px 46%;
+}
+
+#sub-contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px auto;
+}
+
+#sub-contact i {
+  background-color: #232323;
+  color: #fafafa;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.group div {
+  margin-left: 10px;
+}
+
+.group span {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.group p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#form input {
+  height: 40px;
+  width: 400px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  color: #232323;
+  border: 1px solid #ddd;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#btn {
+  width: 100px;
+  height: 30px;
+  background-color: #383838;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+#btn:hover {
+  background-color: #232323;
+}
+
+textarea {
+  height: 180px;
+  width: 820px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  margin: 10px;
+  color: #232323;
+  border: 1px solid #ddd;
+  font-family: sans-serif;
+}
+
+/* -----------------------Footer------------------------*/
+#social__media2 {
+  color: #484848;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 25px;
+  font-size: 20px;
+}
+
+#social__media2 a {
+  color: #232323;
+}
+
+footer {
+  color: #484848;
+  background-color: #fafafa;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----------------------Animaçoes------------------------*/
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
+}
