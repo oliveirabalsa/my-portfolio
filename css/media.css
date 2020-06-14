@@ -320,7 +320,7 @@
         width: 275px;
     }
 }
-@media screen and (max-width: 810px){
+@media screen and (max-height: 810px){
      #technologies {
         height: initial;
     }
