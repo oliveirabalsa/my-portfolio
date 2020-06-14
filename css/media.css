@@ -167,7 +167,8 @@
     }
 
     textarea {
-        width: 600px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -267,7 +268,8 @@
     }
 
     textarea {
-        width: 380px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -353,11 +355,17 @@
     }
 
     #form input {
-        width: 250px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+        
     }
 
     textarea {
-        width: 275px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 @media screen and (max-height: 810px){
