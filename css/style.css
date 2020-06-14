@@ -528,7 +528,7 @@ footer {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  position: fixed;
+  position: absolute;
   top: 5px;
   right: 5px;
   display: none;
