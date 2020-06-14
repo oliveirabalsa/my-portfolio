@@ -1,3 +1,6 @@
+const menuIcon = document.querySelector('.menu')
+menuIcon.addEventListener('click', iconToggle)
+
 // Scroll Suave no Menu
 const menuItens = document.querySelectorAll('#menu-itens a');
 
@@ -23,8 +26,6 @@ function scrollToPosition(to) {
     });
 }
 
-
-
 // Animção da pagina
 
 const target = document.querySelectorAll('[data-anime]');
@@ -48,3 +49,13 @@ if(target.length) {
         animeScroll();
     })
 }
+
+function iconToggle() {
+    const mobileMenu = document.querySelector('.mobile__menu')
+    setTimeout(() => {
+        mobileMenu.classList.toggle('show')
+    },300)
+    
+}
+
+

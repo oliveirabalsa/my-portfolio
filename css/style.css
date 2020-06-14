@@ -36,7 +36,7 @@ header {
 /* ----------------------- Menu ------------------------*/
 #menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   font-size: 20px;
@@ -50,6 +50,12 @@ header {
 
 #menu a:hover {
   color: #f0ffff;
+}
+
+#menu-itens{
+  position: absolute;
+  right: 30px;
+  top: 17px;
 }
 
 /* ----------------------- profile ------------------------*/
@@ -513,6 +519,74 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*-------------------------Hambuerguer__Menu----------------------*/
+
+.menu {
+  background: #000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #fff;
+  width: 30px;
+  height: 2px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #fff;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+.mobile__menu{
+  display: none;
+  transition: 0.3s ease-out;
+}
+.show{
+  display: block;
+  transition: 0.3s ease-in;
+}
+#menu-hamburguer{
+  display: none;
+}
+
+#menu-hamburguer:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+#menu-hamburguer:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+#menu-hamburguer:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
 }
 
 /* -----------------------Animaçoes------------------------*/

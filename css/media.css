@@ -82,11 +82,22 @@
         font-size: 25px;
     }
 
+    .menu {
+        display: block;
+    }
+
     #menu-itens {
-        display: flex;
+        display: none;
         flex-direction: column;
         box-sizing: border-box;
         margin-top: 18px;
+    }
+
+    .mobile__menu {
+        position: absolute;
+        right: 45px;
+        top: 19px;
+        background: #000000ab;
     }
 
     #profile { 
@@ -136,13 +147,23 @@
     }
 
     #form input {
-        width: 340px;
-        margin: 15px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+        
     }
 
     #btn {
         margin-bottom: 15px;
         
+    }
+
+    #menu h3 {
+        position: absolute;
+        top: 10px;
+        left: 15px;
     }
 
     textarea {
@@ -169,14 +190,23 @@
         flex-direction: column;
         overflow: hidden;
     }
+    #menu h3 {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    .menu {
+        display: block;
+    }
 
     #profile {
         margin-top: 75px;
     }
 
     #profile img {
-        width: 215px;
-        margin-top: 100px;
+        width: 300px;
+        height: 250px;
     }
      #technologies {
         height: initial;
@@ -225,6 +255,15 @@
 
     #form {
         display: block;
+    }
+
+    #form input {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+        
     }
 
     textarea {
