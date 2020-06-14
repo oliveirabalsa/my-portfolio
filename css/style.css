@@ -55,8 +55,8 @@ header {
 /* ----------------------- profile ------------------------*/
 #profile {
   margin-top: 100px;
-  letter-spacing: 10px
-  color: #000;
+  letter-spacing: 10px;
+  color: #fff;
 }
 
 #profile h1 {
@@ -284,6 +284,10 @@ header {
 .typescript {
   width: 80px;
   height: 80px;
+}
+
+.counter h3 {
+  margin: 0 auto;
 }
 
 .red {
