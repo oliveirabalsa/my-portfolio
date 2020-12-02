@@ -10,6 +10,7 @@
     <link rel="icon" type="imagem/png" href="./img/code.png" />
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/canvas.css">
     <script src="https://kit.fontawesome.com/bb5a28c4c3.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157870898-1"></script>
@@ -23,42 +24,41 @@
 </head>
 
 <body>
+    <canvas id="canvas"></canvas>
     <div id="container">
-        <header>
-            <a id="wpp" href="https://api.whatsapp.com/send?phone=+5511964425428" target="_blank"><i
-                    class="fab fa-whatsapp"></i></a>
-            <nav id="menu">
-                <h3>Portfólio</h3>
-                <div id="menu-itens">
-                    <a href="#about">Sobre</a></li>
-                    <a href="#technologies">Tecnologias</a>
-                    <a href="#contact">Contato</a>
-                </div>
-                
-                    <input id="menu-hamburguer" type="checkbox" />
-                    <label for="menu-hamburguer">
-                      <div class="menu">
-                        <span class="hamburguer"></span>
-                        <div class="mobile__menu">
-                            <a href="#about">Sobre</a></li>
-                            <a href="#technologies">Tecnologias</a>
-                            <a href="#contact">Contato</a>
-                        </div>
-                      </div>
-                    </label>
-            </nav>
-            <div id="profile">
-                <img src="./img/eu.JPG" alt="Eu">
-                <h1>Leonardo Oliveira Balsalobre</h1>
-                <p>Full-stack Developer</p>
+        <a id="wpp" href="https://api.whatsapp.com/send?phone=+5511964425428" target="_blank"><i
+                class="fab fa-whatsapp"></i></a>
+        <nav id="menu">
+            <div id="menu-itens">
+                <a href="#about">Sobre</a></li>
+                <a href="#technologies">Tecnologias</a>
+                <a href="#contact">Contato</a>
             </div>
-        </header>
+
+            <input id="menu-hamburguer" type="checkbox" />
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                    <div class="mobile__menu">
+                        <a href="#about">Sobre</a></li>
+                        <a href="#technologies">Tecnologias</a>
+                        <a href="#contact">Contato</a>
+                    </div>
+                </div>
+            </label>
+        </nav>
+        <div id="profile">
+            <img src="./img/eu.JPG" alt="Eu">
+            <h1>Leonardo Oliveira Balsalobre</h1>
+            <p>Full-stack Developer</p>
+        </div>
 
         <!-- Section sobre minha descrição-->
         <section id="about">
             <div id="descricao" data-anime="left" class="">
                 <h2>Olá! Me chamo <span>Leonardo.</span></h2>
-                <p>Sou apaixonado por tecnologia, desde pequeno sempre busquei aprender sobre programação e atualmente trabalho com <span>desenvolvimento back-end</span> em busca de aprimorar minhas skills.</p>
+                <p>Sou apaixonado por tecnologia, desde pequeno sempre busquei aprender sobre programação e atualmente
+                    trabalho como <span>Tech Lead</span> em busca de aprimorar minhas skills.</p>
                 <div id="social__media">
                     <a href="https://www.linkedin.com/in/leonardo-balsalobre/" target="_blank"><i
                             class="fab fa-linkedin-in"></i></a>
@@ -138,6 +138,26 @@
                     </div>
                 </div>
             </div>
+            <div class="tecs" data-anime>
+                <div>
+                    <img src="./img/nest.svg" alt="">
+                    <div class="counter">
+                        <h3>Nest.js</h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/flutter.png" alt="">
+                    <div class="counter">
+                        <h3>Flutter</h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/cordova.png" alt="">
+                    <div class="counter">
+                        <h3>Cordova</h3>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Section contact-->
@@ -155,7 +175,8 @@
                     <i class="fas fa-file"></i>
                     <div>
                         <span>Curriculo</span>
-                        <p><a class="download__curriculum" href="./files/leonardo-curriculum.pdf" download="Leonardo-Oliveira.pdf">Baixar</a></p>
+                        <p><a class="download__curriculum" href="./files/CV_Leonardo.pdf"
+                                download="Leonardo-Oliveira.pdf">Baixar</a></p>
                     </div>
                 </div>
                 <div class="group">
@@ -200,6 +221,7 @@
             </div>
         </footer>
         <script src="./js/main.js"></script>
+        <script src="./js/canvas.js"></script>
     </div>
 </body>
 

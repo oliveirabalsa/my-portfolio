@@ -1,61 +1,53 @@
-const menuIcon = document.querySelector('.menu')
-menuIcon.addEventListener('click', iconToggle)
+const menuIcon = document.querySelector(".menu");
+menuIcon.addEventListener("click", iconToggle);
 
-// Scroll Suave no Menu
-const menuItens = document.querySelectorAll('#menu-itens a');
+const menuItens = document.querySelectorAll("#menu-itens a");
 
-menuItens.forEach(item => {
-    item.addEventListener('click', scrollToIdOnClick);
-})
+menuItens.forEach((item) => {
+  item.addEventListener("click", scrollToIdOnClick);
+});
 
 function getScrollTopByHref(element) {
-    const id = element.getAttribute('href');
-    return document.querySelector(id).offsetTop;
+  const id = element.getAttribute("href");
+  return document.querySelector(id).offsetTop;
 }
 
 function scrollToIdOnClick(event) {
-    event.preventDefault()
-    const to = getScrollTopByHref(event.target)
-    scrollToPosition(to);
+  event.preventDefault();
+  const to = getScrollTopByHref(event.target);
+  scrollToPosition(to);
 }
 
 function scrollToPosition(to) {
-    window.scroll({
-        top: to,
-        behavior: 'smooth'
-    });
+  window.scroll({
+    top: to,
+    behavior: "smooth",
+  });
 }
-
-// Animção da pagina
-
-const target = document.querySelectorAll('[data-anime]');
-const animationClass = 'animate';
+const target = document.querySelectorAll("[data-anime]");
+const animationClass = "animate";
 
 function animeScroll() {
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
-    target.forEach(function(element) {
-        if(windowTop > element.offsetTop) {
-            element.classList.add(animationClass);
-        } else {
-            element.classList.remove(animationClass);
-        }
-    })
+  const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
+  target.forEach(function (element) {
+    if (windowTop > element.offsetTop) {
+      element.classList.add(animationClass);
+    } else {
+      element.classList.remove(animationClass);
+    }
+  });
 }
-
 animeScroll();
 
-if(target.length) {
-    window.addEventListener('scroll', function(){
-        animeScroll();
-    })
+if (target.length) {
+  window.addEventListener("scroll", function () {
+    animeScroll();
+  });
 }
 
 function iconToggle() {
-    const mobileMenu = document.querySelector('.mobile__menu')
-    setTimeout(() => {
-        mobileMenu.classList.toggle('show')
-    },300)
-    
+  const mobileMenu = document.querySelector(".mobile__menu");
+  setTimeout(() => {
+    mobileMenu.classList.toggle("show");
+  }, 300);
 }
-
-
